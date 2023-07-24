@@ -1,0 +1,40 @@
+body{
+    min-height: 100%;
+    max-width: 1800px;
+    margin: auto;
+    font-weight: 200;
+    background-color: black;
+    color: white;
+}
+hr{
+    background-color: #6F9B6F;
+    height: 5px;
+    border:none;
+}
+.home-page{
+    color: #E21212;
+}
+.main-nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.home-images{
+    width: 250px;
+    height: 300px;
+    border-radius: 15%;
+}
+
+
+#images-media-scroller{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 15%;
+}
+
+li{
+    list-style-type: none;
+}
