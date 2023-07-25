@@ -2,7 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan'); //logs http req and res
-const fs = require('fs'); //allows interacting with files using node.js
+const fs = require('fs'); //allows interacting with files using node.js - fs:file system
 const path = require('path'); //works with file and directory paths
 
 const PORT = process.env.PORT || 3001
@@ -30,12 +30,19 @@ app.post('/contact', (req, res)=>{
 
 //pushes the data into the array in contactsData.json  
 fs.readFile(contactsFilePath, 'utf8', (err, existingData) => {
+  //checks for errors - enoent is abbreviation for error no entry
   if (err && err.code !== 'ENOENT') {
     console.error(err);
     return res.status(500).json({ error: 'Failed to read the data file.' });
   }
 
-  const contactsData = existingData ? JSON.parse(existingData) : [];
+let contactsData;
+  if (existingData) {
+    contactsData = JSON.parse(existingData);
+  } else {
+      contactsData = [];
+  }
+  //const contactsData = existingData ? JSON.parse(existingData) : [];
   contactsData.push(data);
 
   // Write the updated data to the file
