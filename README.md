@@ -6,7 +6,6 @@ Welcome to the A&E Handyman Promotional Website!
 - You are able to navigate to different pages
 
 
-
 Things that will be added in the future:
 - A recaptcha feature on the form so that the website is protected from bots
 - Link to a larger database and something more secure so that data is protected
