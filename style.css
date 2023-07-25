@@ -45,7 +45,7 @@ a{
 
 .home-est-quote{
     font-size: xx-large;
-    
+    text-decoration: dotted underline;
 }
 
 .contact-us-button{
@@ -76,9 +76,18 @@ li{
 /* styling for the automatic horizontal media scroller */
 #contactUsForm{
     border: 5px solid white;
+    padding: 25px 10px 25px 10px;
+    font-size: xx-large;
+    font-weight: 300;
 }
 #contact-us{
-    border: 2px solid red;
+    margin: 80px 400px 100px 100px;
+}
+.submitBtn{
+    font-size: xx-large;
+    border-radius: 15%;
+    border: #f5b505 dotted 10px;
+    background-color: white;
 }
 
 
