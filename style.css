@@ -1,7 +1,6 @@
 /* styles for the entire website */
 body{
     font-family: 'Josefin Sans', sans-serif;
-    max-height: 100%;
     max-width: 80%;
     margin: auto;
     font-weight: 200;
@@ -73,7 +72,7 @@ li{
 }
 
 
-/* styling for the automatic horizontal media scroller */
+/* styling for contact form page */
 #contactUsForm{
     border: 5px solid white;
     padding: 25px 10px 25px 10px;
@@ -89,19 +88,60 @@ li{
     border: #f5b505 dotted 10px;
     background-color: white;
 }
+.recaptcha{
+    width: 200px;
+}
 
+/* hidding all pages except for the home page */
+#projects,
+#about-us,
+#services,
+#gallery,
+#contact-us {
+    display: none;
+}
 
-.horizontal-media-scroller{
+/* Set the container to the desired width and height to fit your images */
+.image-slider {
+    width: 1200px;;
+    height: 800px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: grid;
+    grid-auto-flow: column;
+  }
+  
+  /* Keyframes for animation */
+  @keyframes imageSlide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); /* Adjust this value based on the number of images */
+    }
+  }
+  
+  /* Apply animation to each image */
+  .image-slider img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: imageSlide 15s linear infinite; /* Adjust the animation duration (15s) to control the speed */
+  }
+  
+
+/* styling for the automatic horizontal media scroller */
+/* .horizontal-media-scroller{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ded892;
-    border: 10px solid brown;
-    height: 500px;
-    width: 50%;
+    height: 1000px;
+    width: 60%;
 }
 .slides{
-    width: 500%;
+    width: 100%;
     height: 500px;
     display: flex;
     overflow: hidden;
@@ -112,18 +152,17 @@ li{
 }
 
 .media-element{
-    width: 20%;
+    width: 200%;
     transition: 2s;
 }
 .media-element img{
-    width: 275px;
-    height: 360px;
+    width: 950px;
+    height: 1000px;
     border-radius: 15%;
-    border: 2px solid black;
-}
+} */
 
 /* styling for manual horizontal media scroller */
-.manual-navigation{
+/* .manual-navigation{
     position: absolute;
     width: 800px;
     margin-top: 150px;
@@ -158,14 +197,7 @@ li{
 }
 #radio5:checked ~ .first{
     margin-left: -80%;
-}
+} */
 
-/* hidding all pages except for the home page */
-#projects,
-#about-us,
-#services,
-#gallery,
-#contact-us {
-    display: none;
-}
+
 
