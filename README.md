@@ -1,4 +1,5 @@
 Welcome to the A&E Handyman Promotional Website!
+
 - This website is meant to promote the projects that have been done by A&E Handyman
 - The page should explain what projects have been done, the company philosophy, and also includes a contact form
 - Upon submission to the contact form, the data will be saved as a JSON object in the contactsData.json file that can be seen on the backen of the application
