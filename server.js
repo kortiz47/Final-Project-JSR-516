@@ -42,7 +42,7 @@ let contactsData;
   } else {
       contactsData = [];
   }
-  //const contactsData = existingData ? JSON.parse(existingData) : [];
+
   contactsData.push(data);
 
   // Write the updated data to the file
