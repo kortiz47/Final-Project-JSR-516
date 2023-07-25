@@ -24,10 +24,11 @@ a{
     text-decoration: #f5b505 wavy underline;
     color: #01056b;
 }
-.home-page{
+.home{
     color: #E21212;
     font-weight: 500;
     font-style: italic;
+    text-decoration: none;
 }
 
 .headline{
@@ -151,20 +152,11 @@ li{
 }
 
 /* hidding all pages except for the home page */
-#projects{
-    display: none;
-}
-#about-us{
-    display: none;
-}
-#services{
-    display:none;
-}
-#gallery{
-    display: none;
-}
-
-#contact-us{
+#projects,
+#about-us,
+#services,
+#gallery,
+#contact-us {
     display: none;
 }
 
