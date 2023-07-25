@@ -1,46 +1,170 @@
+/* styles for the entire website */
 body{
-    min-height: 100%;
-    max-width: 1800px;
+    font-family: 'Josefin Sans', sans-serif;
+    max-height: 100%;
+    max-width: 80%;
     margin: auto;
     font-weight: 200;
-    background-color: black;
-    color: white;
+    color: black;
+    padding: 15px 45px 15px 45px;
+    background-image: linear-gradient(to bottom right, #AADDE3, #ded892);
 }
-hr{
-    background-color: #6F9B6F;
-    height: 5px;
-    border:none;
-}
-.home-page{
-    color: #E21212;
-}
+
+/* styling for the navigation bar */
 .main-nav-bar{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    font-size: 30px;
-    margin-bottom: 0px;
+    justify-content: space-evenly;
+    font-size: xx-large;
+    padding: 20px 0px 5px 0px;
+    font-size: 2.5em;
+    font-style: italic;
+}
+a{
+    text-decoration: #f5b505 wavy underline;
+    color: #01056b;
+}
+.home-page{
+    color: #E21212;
+    font-weight: 500;
+    font-style: italic;
 }
 
-.home-images{
-    width: 250px;
-    height: 300px;
-    border-radius: 15%;
+.headline{
+    font-size: large;
+    padding: 1.5%;
+    display: flex;
 }
 
+.headline-quote{
+    width: 95%;
+    text-align: center;
+    padding: 5px 25px 5px 25px;
+}
 
-#images-media-scroller{
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 15%;
+.home-est-quote{
+    font-size: xx-large;
+    
+}
+
+.contact-us-button{
+    writing-mode: vertical-rl; /* makes the writing vertical */
+    transform: rotate(360deg); /* rotates the button 360 degrees */
+    white-space: nowrap; /* no text wrapping */
+    padding: 20px; 
+    font-size: xx-large;
+    font-weight: 900;
+    border-radius: 50%;
+    border-style: inset;
+    border: 10px dotted #f5b505;
+    background-color: transparent;
+    color: #E21212;
+}
+
+hr{
+    background-color: #4cba8c;
+    height: 5px;
+    border:none;
 }
 
 li{
     list-style-type: none;
 }
+
+
+/* styling for the automatic horizontal media scroller */
 #contactUsForm{
     border: 5px solid white;
 }
 #contact-us{
     border: 2px solid red;
 }
+
+
+.horizontal-media-scroller{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ded892;
+    border: 10px solid brown;
+    height: 500px;
+    width: 50%;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+    overflow: hidden;
+}
+
+.slides input{
+    display: none;
+}
+
+.media-element{
+    width: 20%;
+    transition: 2s;
+}
+.media-element img{
+    width: 275px;
+    height: 360px;
+    border-radius: 15%;
+    border: 2px solid black;
+}
+
+/* styling for manual horizontal media scroller */
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+   background: #ded892; 
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+
+/* hidding all pages except for the home page */
+#projects{
+    display: none;
+}
+#about-us{
+    display: none;
+}
+#services{
+    display:none;
+}
+#gallery{
+    display: none;
+}
+
+#contact-us{
+    display: none;
+}
+

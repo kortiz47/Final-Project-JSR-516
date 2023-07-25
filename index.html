@@ -7,6 +7,9 @@
     <script defer src="./server.js"></script>
     <script defer src="./script.js"></script>
     <script defer src="./app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>A&E Handyman</title>
 </head>
@@ -15,11 +18,11 @@
     <header>
         <nav aria-label="Main Navigation Bar" role="navigation">
             <ul class="main-nav-bar">
-                <li class="projects-page"><a href="">PROJECTS</a></li>
-                <li class="about-us-page">ABOUT US</li>
+                <li class="projects-page"><a href="">projects</a></li>
+                <li class="about-us-page"><a href="">about us</a></li>
                 <li class="home-page">A&E HANDYMAN</li>
-                <li class="services-page">SERVICES</li>
-                <li class="gallery-page">GALLERY</li>
+                <li class="services-page"><a href="">services</a></li>
+                <li class="gallery-page"><a href="">gallery</a></li>
             </ul>
         </nav>
         <hr>
@@ -27,44 +30,69 @@
     <!-- the section below is the headline that will feature a quote that is representative of the company, a contact button, and the best images to display for the horizontal media scroller -->
     <section id="home">
         <div class="headline">
-            <div class="headline-quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, in dolor vel quibusdam hic cupiditate ab similique consequuntur commodi ut dolores quis magnam deleniti consectetur voluptatum necessitatibus. Sit, incidunt laudantium!</div>
-            <div>
-                <button class="contact-us-button">CONTACT US</button>
+            <div class="headline-quote">
+                <h2>Family owned business with over 30 years of experience!</h2>
+                <h2>We are dedicated to an amazing job that you will love. We are dedicated to putting the customer first.</h2>
+                <h1 class="home-est-quote">Contact us to get a free in-home estimate today!</h1>
+            </div>
+            <div class="headline-btn">
+                <button class="contact-us-button">CONTACT US!</button>
             </div>
         </div>
     <!-- horizontal media scroller below -->
         <div class="horizontal-media-scroller">
+
             <!-- radio buttons start -->
-            <div class="radio-buttons">
+            <div class="slides">
                 <input type="radio" name="radio-btn" id="radio1">
                 <input type="radio" name="radio-btn" id="radio2">
                 <input type="radio" name="radio-btn" id="radio3">
                 <input type="radio" name="radio-btn" id="radio4">
                 <input type="radio" name="radio-btn" id="radio5">
-            </div>
             <!-- radio buttons end -->
-            <div id="img-media-scroller">
-                <div class="media-element">
-                    <img class="home-images" alt="" src="images/homePageImage1.jpg">
+
+            <!-- images in the slider start -->
+                <div class="media-element first">
+                    <img class="home-images" alt="illuminated concrete staircase from top view" src="images/homePageImage1.jpg">
                 </div>
                 <div class="media-element">
-                    <img class="home-images" alt="" src="images/homePageImage2.jpeg">
+                    <img class="home-images" alt="marble dining room" src="images/homePageImage2.jpeg">
                 </div>
                 <div class="media-element">
-                    <img class="home-images" alt="" src="images/homePageImage3.jpeg">
+                    <img class="home-images" alt="illuminated conrete staircase from bottom view" src="images/homePageImage3.jpeg">
                 </div>
                 <div class="media-element">
-                    <img class="home-images" alt="" src="images/homePageImage4.png">
+                    <img class="home-images" alt="egg shaped lamps with decorative white space" src="images/homePageImage4.png">
                 </div>
                 <div class="media-element">
-                    <img class="home-images" alt="" src="images/homePageImage5.jpeg">
+                    <img class="home-images" alt="moon shaped lamps with decorative white space" src="images/homePageImage5.jpeg">
                 </div>
+            <!-- images in the slider end -->
+
+            <!-- automatic navigation start -->
+            <div class="auto-navigation">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
             </div>
+            <!-- automatic navigation end -->
+            </div>
+            <!-- manual navigation starts -->
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+            <!-- manual navigation ends -->
         </div>
     </section>
     <!-- this section will be another page that will link to the projects-page button on the navigation bar and will hold testimonies and images of past projects -->
     <section id="projects">
-
+        <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime exercitationem blanditiis consectetur eligendi omnis aliquid quia ducimus eos adipisci, ratione perspiciatis dolore molestiae velit delectus doloribus cum repudiandae vitae est.</article>
     </section>
     <!-- this section will be a page that will link to the about-us-page button on the navigation bar and talk about the years of experience of the company, how it came to be, and the philosophy behind the company -->
     <section id="about-us">
