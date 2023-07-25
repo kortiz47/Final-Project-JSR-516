@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="./server.js"></script>
+    <script defer src="./script.js"></script>
+    <script defer src="./app.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>A&E Handyman</title>
 </head>
@@ -108,7 +112,23 @@
     <!-- this section will be a form to send in an inquiry for an estimate -->
     <section id="contact-us">
         <!-- use get method if you want to retrive data -->
-        <form method="post"></form>
+        <h1>WE WOULD LOVE TO HEAR FROM YOU!</h1>
+        <h2>Use the contact form below to submit a request</h2>
+        <form id="contactUsForm" action="/submit" method="POST">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
     </section>
 </body>
 </html>

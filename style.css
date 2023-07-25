@@ -38,3 +38,9 @@ hr{
 li{
     list-style-type: none;
 }
+#contactUsForm{
+    border: 5px solid white;
+}
+#contact-us{
+    border: 2px solid red;
+}
